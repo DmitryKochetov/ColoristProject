@@ -20,6 +20,24 @@
   </div>
 </template>
 
+<script>
+import { useHead } from '@vueuse/head'
+
+export default {
+  setup() {
+    useHead({
+      title: 'Запись',
+      meta: [
+        {
+          name: `description`,
+          content: 'Запись на окрашивание',
+        },
+      ],
+    })
+  },
+}
+</script>
+
 <style scoped lang="scss">
 
 form {

@@ -15,11 +15,15 @@
 import { mapGetters } from 'vuex';
 import Header from './blocks/Header.vue'
 import Footer from './blocks/Footer.vue'
+import { useHead } from '@vueuse/head'
+import { reactive, computed } from 'vue'
 
 
 export default {
 
+ 
   name: 'App',
+
   components: {
     Header,
     Footer,
@@ -34,7 +38,23 @@ export default {
   },
   methods: {
 
-  }
+  },
+  setup() {
+    const siteData = reactive({
+      title: `Парикмахер-колорист`,
+      description: `К вашим услугам - женские, мужские и детские стрижки, оформление усов и бороды, окрашивания любой сложности, а также профессиональный уход за волосами от LEBEL (Счастье для волос). Сестрорецк, Рай в шалаше`,
+    })
+
+    useHead({
+      title: computed(() => siteData.title),
+      meta: [
+        {
+          name: `description`,
+          content: computed(() => siteData.description),
+        },
+      ],
+    })
+  },
 
 }
 

@@ -36,12 +36,17 @@
         <div class="navigtionHeading">
           <h1 class="navigtionHeading__h1">КАК МЕНЯ НАЙТИ</h1>
         </div>
-        <div class="navigtionMap">
+        <div class="navigationMap" @click="activateMap()">
+          <div class="mapHint" id="mapHint">
+            Нажмите на карту, чтобы активировать
+          </div>
           <iframe
+            id="mapFrame"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A57e5b6d41377697ad9c702c4b94a396976d1c8f848219c69688364d040534e78&amp;
             source=constructor"
             width="100%"
             height="600"
+            style="pointer-events: none"
             frameborder="0"
           ></iframe>
         </div>
@@ -66,6 +71,14 @@ export default {
     return {};
   },
   mounted() {},
+  methods: {
+    activateMap() {
+      let mapFrame = document.getElementById("mapFrame");
+      let mapHint = document.getElementById("mapHint");
+      mapFrame.removeAttribute("style");
+      mapHint.setAttribute("style", "display:none");
+    },
+  },
 
 };
 </script>
@@ -77,8 +90,6 @@ export default {
   background: no-repeat url("../assets/mainPage/mainPageBackground.png");
   display: flex;
   justify-content: space-between;
-
-
 }
 
 .infoLeft {
@@ -91,9 +102,9 @@ export default {
   padding-left: 10%;
 
   @media screen and (max-width: 630px) {
-      margin-top: 60px;
-      padding-left: 5%;
-    }
+    margin-top: 60px;
+    padding-left: 5%;
+  }
 
   &__h1 {
     color: #8a5737;
@@ -110,10 +121,10 @@ export default {
     @media screen and (max-width: 1024px) {
       font-size: 50px;
     }
+
     @media screen and (max-width: 650px) {
       font-size: 42px;
     }
-
   }
 
   &__h2 {
@@ -131,6 +142,7 @@ export default {
     @media screen and (max-width: 1024px) {
       font-size: 30px;
     }
+
     @media screen and (max-width: 650px) {
       font-size: 26px;
     }
@@ -153,10 +165,6 @@ export default {
   @media screen and (max-width: 900px) {
     background-size: contain;
   }
-
-    // @media screen and (max-width: 550px) {
-    //   width: 68%;
-    // }
 }
 
 .introduce {
@@ -284,15 +292,39 @@ export default {
   }
 }
 
-.navigtionMap {
+.navigationMap {
   width: 80vw;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 120px;
+  position: relative;
 
   @media screen and (max-width: 800px) {
     width: 100vw;
   }
+}
+
+.mapHint {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #8c6f5c;
 }
 </style>

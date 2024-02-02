@@ -1,19 +1,19 @@
 <template>
   <section class="dropDownMenuWrapper"
-    :class="{ 'dropDownMenuWrapper--dark': isDarkMode, 'dropDownMenuWrapper--noTitle': !menuTitle }">
+    :class="{'dropDownMenuWrapper--noTitle': !menuTitle }">
 
-    <button class="dropDownMenuButton" ref="menu" @click="openClose" :class="{ 'dropDownMenuButton--dark': isDarkMode }">
+    <button class="dropDownMenuButton" ref="menu" @click="openClose">
       {{ menuTitle }}
     </button>
 
     <div class="iconWrapper" :class="{ 'iconWrapper--noTitle': !menuTitle }">
-      <div class="bar1" :class="{ 'bar1--open': isOpen, 'bar1--dark': isDarkMode }" />
-      <div class="bar2" :class="{ 'bar2--open': isOpen, 'bar2--dark': isDarkMode }" />
-      <div class="bar3" :class="{ 'bar3--open': isOpen, 'bar3--dark': isDarkMode }" />
+      <div class="bar1" :class="{ 'bar1--open': isOpen}" />
+      <div class="bar2" :class="{ 'bar2--open': isOpen}" />
+      <div class="bar3" :class="{ 'bar3--open': isOpen}" />
     </div>
 
-    <section class="dropdownMenu" v-if="isOpen" :class="{ 'dropdownMenu--dark': isDarkMode }">
-      <div class="menuArrow" :class="{ 'menuArrow--dark': isDarkMode }" />
+    <section class="dropdownMenu" v-if="isOpen">
+      <div class="menuArrow" />
       <slot />
     </section>
 
@@ -23,18 +23,17 @@
 <script>
 
 export default {
-  props: ["darkMode", "menuTitle"],
+  props: ["menuTitle"],
   data() {
     return {
       isOpen: false,
-      isDarkMode: false
     }
   },
 
   methods: {
 
     openClose() {
-      var _this = this
+      let _this = this
 
       const closeListerner = (e) => {
 
@@ -61,23 +60,7 @@ export default {
     }
 
   },
-  watch: {
-    darkMode(val) {
-
-      if (!val)
-        this.isDarkMode = false
-
-
-      if (val == 'force')
-        this.isDarkMode = true
-
-
-      if (val == 'auto' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
-        this.isDarkMode = true
-
-    }
-  }
-
+ 
 }
 
 </script>
@@ -120,10 +103,6 @@ export default {
     cursor: pointer;
   }
 
-  .dropDownMenuButton--dark {
-    color: #eee;
-  }
-
   .iconWrapper {
     width: 25px;
     height: 25px;
@@ -146,10 +125,6 @@ export default {
       transition: all 0.2s ease;
     }
 
-    .bar1--dark {
-      background: #eee;
-    }
-
     .bar1--open {
       transform: translate(-50%, -50%) rotate(45deg);
       margin-top: 0;
@@ -170,10 +145,6 @@ export default {
       transition: all 0.2s ease;
     }
 
-    .bar2--dark {
-      background: #eee;
-    }
-
     .bar2--open {
       opacity: 0;
     }
@@ -189,10 +160,6 @@ export default {
       border-radius: 9999px;
       transform: translate(-50%, calc(-50% + 8px));
       transition: all 0.2s ease;
-    }
-
-    .bar3--dark {
-      background: #eee;
     }
 
     .bar3--open {
@@ -238,11 +205,6 @@ export default {
       background: white;
       transform: rotate(45deg);
       border-radius: 4px 0 0 0;
-    }
-
-    .menuArrow--dark {
-      background: #333;
-      border: none;
     }
 
     .option {
@@ -291,20 +253,6 @@ export default {
 
   }
 
-  .dropdownMenu--dark {
-    background: #333;
-    border: none;
-
-    .option {
-      border-bottom: 1px solid #888;
-    }
-
-    * {
-      color: #eee;
-    }
-
-  }
-
   @keyframes menu {
     from {
       transform: translate3d(0, 30px, 0)
@@ -323,7 +271,4 @@ export default {
   height: 55px;
 }
 
-.dropDownMenuWrapper--dark {
-  background: #333;
-  border: none;
-}</style>
+</style>

@@ -13,7 +13,7 @@ import { mapGetters } from 'vuex';
 import ArticleItem from '../components/ArticleItem.vue';
 
 export default {
-    name: 'Blog-List',
+    name: 'ArticlesSet',
     components: {
         ArticleItem,
     },

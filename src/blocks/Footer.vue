@@ -6,7 +6,7 @@
 
                     <div class="footerMenuItems">
                         <router-link to="/">
-                            <div class="footerMenuItems__item">Домой</div>
+                            <div class="footerMenuItems__item" @click="scrollUp()">Наверх</div>
                         </router-link>
                         <router-link to="/Appointment">
                             <div class="footerMenuItems__item hiddenFooterItem">запись</div>
@@ -73,7 +73,12 @@ export default {
     name: 'Footer-block',
     props: {
 
+    },
+    methods: {
+    scrollUp() {
+      window.scrollTo(0,0);
     }
+  },
 }
 </script>
   

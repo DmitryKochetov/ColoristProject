@@ -42,6 +42,11 @@ const routes = [
     name: 'ProceduresView',
     component: () => import('../views/ProceduresView.vue')
   },
+  {
+    path: '/:pathMatch(.*)*',
+    // name: "Component404Page",
+    component: () => import('../views/ErrorPage404.vue')
+  },
   
 ]
 

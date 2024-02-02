@@ -13,6 +13,7 @@
 <script>
 import { mapMutations, mapGetters } from 'vuex';
 import PortfolioSet from '../components/PortfolioSet.vue';
+import { useHead } from '@vueuse/head';
 
 export default {
     name: "PortfolioView",
@@ -31,6 +32,17 @@ export default {
     methods: {
         ...mapMutations(['CHANGEPORTFOLIOSORTITEM']),
     },
+    setup() {
+    useHead({
+      title: "Портфолио",
+      meta: [
+        {
+          name: `description`,
+          content: "Образцы работ мастера",
+        },
+      ],
+    });
+  },
 };
 </script>
   

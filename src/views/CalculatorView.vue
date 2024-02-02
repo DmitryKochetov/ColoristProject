@@ -60,7 +60,8 @@
 </template>
 
 <script>
-// import { mapGetters } from "vuex";
+
+import { useHead } from '@vueuse/head'
 
 export default {
   name: "CalculatorView",
@@ -88,6 +89,17 @@ export default {
         );
       } else return "";
     },
+  },
+  setup() {
+    useHead({
+      title: "Калькулятор",
+      meta: [
+        {
+          name: `description`,
+          content: "Калькулятор окрашивания",
+        },
+      ],
+    });
   },
 };
 </script>
@@ -253,6 +265,10 @@ export default {
 .form_radio_btn {
   display: inline-block;
   margin-right: 10px;
+
+  @media screen and (max-width: 480px) {
+
+    }
 }
 
 .form_radio_btn input[type="radio"] {
@@ -281,6 +297,7 @@ export default {
     padding: 1vh 1vw;
     font-size: 14px;
   }
+
 }
 
 /* Checked */
