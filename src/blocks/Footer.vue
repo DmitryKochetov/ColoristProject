@@ -19,7 +19,7 @@
                         </router-link>
                         <div class="copyright">
                             <a href="https://api.whatsapp.com/send/?phone=79312469934" target="_blank">
-                                <p>Copyright © 2024 Kochetov Dmitry</p>
+                                <p>2024 Kochetov Dmitry</p>
                             </a>
                         </div>
                     </div>

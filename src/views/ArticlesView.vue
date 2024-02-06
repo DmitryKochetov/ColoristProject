@@ -1,5 +1,5 @@
 <template>
-  <div class="backwrapper">
+  <!-- <div class="backwrapper"> -->
     <div class="container">
       <div class="articles">
         <div class="articlesTagSet">
@@ -15,7 +15,7 @@
         <ArticlesSet class="articlesBox" />
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -36,6 +36,7 @@ export default {
       sortItem: "",
     };
   },
+
   mounted() {},
   methods: {
     ...mapMutations(["CHANGEARTICLESSORTITEM"]),
@@ -59,12 +60,12 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  padding: 50px 10vw 50px 5vw;
+  padding: 50px 5vw 50px 20px;
+  background: repeat url("../assets/mainPage/mainPageBackground.png");
 
   @media screen and (max-width: 630px) {
     flex-direction: column;
-    padding: 30px 2vw 0 30px;
+    padding: 30px 2vw 0 2vw;
   }
 }
 
@@ -99,7 +100,7 @@ export default {
     font-size: 18px;
     line-height: 125%;
     letter-spacing: 0.36px;
-    max-height: 41px;
+    max-height: 61px;
     cursor: pointer;
 
     &:hover {

@@ -6,6 +6,7 @@ export default createStore({
     // sortProjectsItem: "",
     sortPhotoItem: "",
     sortArticlesItem: "",
+    selectedArticleId: 1,
     projects: [
       {
         id: 1,
@@ -179,7 +180,7 @@ export default createStore({
         id: 3,
         sliderItems: [
           {id: 1, name: 'img1', img: require("@/assets/Articles/bixiplast1-1.jpg"),},
-          {id: 1, name: 'img1', img: require("@/assets/Articles/bixiplast1-2.jpg"),},
+          {id: 2, name: 'img1', img: require("@/assets/Articles/bixiplast1-2.jpg"),},
         ],
         image: require("@/assets/Articles/bixiplast1-2.jpg"),
         label: "",
@@ -206,6 +207,141 @@ export default createStore({
         text: `AIRTOUCH позволяет получить максимально естественный результат окрашивания. Без явных желтых или оранжевых тонов, по максимуму без четких переходов. Помогает уйти от ежемесячного окрашивания корней.
         Прекрасная техника окрашивания, позволяющая делать коррекцию не чаще чем через 3-6 месяцев.`,
         tag: "AIRTOUCH (Эйртач)",
+        summary: "",
+      },
+      {
+        id: 5,
+        sliderItems: [
+          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
+          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+        ],
+        image: require("@/assets/Articles/testImg1.png"),
+        label: "",
+        heading: "Тестовая статья 1",
+        date: "",
+        link: "#",
+        text: `это текст к тестовой статье`,
+        tag: "тест",
+        summary: "",
+      },
+      {
+        id: 6,
+        sliderItems: [
+          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
+          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+        ],
+        image: require("@/assets/Articles/testImg1.png"),
+        label: "",
+        heading: "Тестовая статья 2",
+        date: "",
+        link: "#",
+        text: `это текст к тестовой статье`,
+        tag: "тест",
+        summary: "",
+      },
+      {
+        id: 7,
+        sliderItems: [
+          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
+          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+        ],
+        image: require("@/assets/Articles/testImg1.png"),
+        label: "",
+        heading: "Тестовая статья 3",
+        date: "",
+        link: "#",
+        text: `это текст к тестовой статье`,
+        tag: "тест",
+        summary: "",
+      },
+      {
+        id: 8,
+        sliderItems: [
+          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
+          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+        ],
+        image: require("@/assets/Articles/testImg1.png"),
+        label: "",
+        heading: "Тестовая статья 4",
+        date: "",
+        link: "#",
+        text: `это текст к тестовой статье`,
+        tag: "тест",
+        summary: "",
+      },
+      {
+        id: 9,
+        sliderItems: [
+          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
+          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+        ],
+        image: require("@/assets/Articles/testImg1.png"),
+        label: "",
+        heading: "Тестовая статья 5",
+        date: "",
+        link: "#",
+        text: `это текст к тестовой статье`,
+        tag: "тест",
+        summary: "",
+      },
+      {
+        id: 10,
+        sliderItems: [
+          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
+          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+        ],
+        image: require("@/assets/Articles/testImg1.png"),
+        label: "",
+        heading: "Тестовая статья 6",
+        date: "",
+        link: "#",
+        text: `это текст к тестовой статье`,
+        tag: "тест",
+        summary: "",
+      },
+      {
+        id: 11,
+        sliderItems: [
+          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
+          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+        ],
+        image: require("@/assets/Articles/testImg1.png"),
+        label: "",
+        heading: "Тестовая статья 7",
+        date: "",
+        link: "#",
+        text: `это текст к тестовой статье`,
+        tag: "тест",
+        summary: "",
+      },
+      {
+        id: 12,
+        sliderItems: [
+          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
+          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+        ],
+        image: require("@/assets/Articles/testImg1.png"),
+        label: "",
+        heading: "Тестовая статья 8",
+        date: "",
+        link: "#",
+        text: `это текст к тестовой статье`,
+        tag: "тест",
+        summary: "",
+      },
+      {
+        id: 13,
+        sliderItems: [
+          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
+          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+        ],
+        image: require("@/assets/Articles/testImg1.png"),
+        label: "",
+        heading: "Тестовая статья 9",
+        date: "",
+        link: "#",
+        text: `это текст к тестовой статье`,
+        tag: "тест",
         summary: "",
       },
     ],
@@ -238,6 +374,9 @@ export default createStore({
       }
       return state.articles.filter((el) => el.tag === state.sortArticlesItem);
     },
+    getArticle(state){
+      return state.articles.find(function(elem){return elem.id === state.selectedArticleId})
+    },
   },
   mutations: {
     CHANGEFOOTERSHOWFLAG(state, showFooter){
@@ -248,6 +387,9 @@ export default createStore({
     },
     CHANGEARTICLESSORTITEM(state, sortArticlesItem) {
       state.sortArticlesItem = sortArticlesItem;
+    },
+    CHANGESELECTEDARTICLEID(state, selectedArticleId) {
+      state.selectedArticleId = selectedArticleId;
     },
   },
   actions: {

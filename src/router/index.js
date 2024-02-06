@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ArticlesView from '../views/ArticlesView.vue'
 
 const routes = [
   {
@@ -20,8 +21,16 @@ const routes = [
   {
     path: '/articles',
     name: 'ArticlesView',
-    component: () => import('../views/ArticlesView.vue')
+    component: ArticlesView,
+    children: [
+      { 
+          path: ':page',
+          component: ArticlesView,
+          props: true
+      }
+  ]
   },
+
   {
     path: '/appointment',
     name: 'AppointmentView',
@@ -43,6 +52,11 @@ const routes = [
     component: () => import('../views/ProceduresView.vue')
   },
   {
+    path: '/SingleArticle',
+    name: 'SingleArticleView',
+    component: () => import('../views/SingleArticleView.vue')
+  },
+  {
     path: '/:pathMatch(.*)*',
     // name: "Component404Page",
     component: () => import('../views/ErrorPage404.vue')
@@ -52,7 +66,14 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
 })
 
 export default router
