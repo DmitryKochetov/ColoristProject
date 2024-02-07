@@ -12,7 +12,6 @@
           :item_data="item"
         />
       </div>
-      <!-- <div class="sliderButtons"> -->
         <div @click="prevSlide" class="sliderLeftButton">
           <svg
             width="40px"
@@ -103,7 +102,6 @@
             </g>
           </svg>
         </div>
-      <!-- </div> -->
     </div>
   </div>
 </template>
@@ -120,7 +118,6 @@ export default {
   data() {
     return {
       currentSlideIndex: 0,
-      // stopSlideMove: false,
       autoPlay: true,
       autoPlayDelay: 3000,
     };
@@ -156,12 +153,7 @@ export default {
     if (this.autoPlay) {
       this.startAutoPlay();
     }
-    // let cont = this;
-    // if (this.stopSlideMove) {
-    //     setInterval(function () {
-    //         cont.nextSlide()
-    //     }, 3000)
-    // }
+
   },
 };
 </script>
@@ -171,10 +163,7 @@ export default {
   border-radius: 24px;
   width: 70vw;
   height: auto;
-  // width: 600px;
-  // height: 600px;
   overflow: hidden;
-  // margin: 0 auto;
   position: relative;
   margin-bottom: 20px;
 }
@@ -182,8 +171,6 @@ export default {
 .projectSlider {
   display: flex;
   transition: all ease 0.5s;
-  // height: 100%;
-  // width: 100%;
 }
 
 .sliderLeftButton{
@@ -197,13 +184,4 @@ export default {
     right: 10px;
 }
 
-// .sliderButtons {
-
-//   margin-top: 20px;
-//   margin-bottom: 20px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 88px;
-// }
 </style>

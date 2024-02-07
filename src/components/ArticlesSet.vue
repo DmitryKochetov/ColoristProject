@@ -64,8 +64,6 @@ export default {
     $route() {
       const page = this.$route.params.page;
       this.currentPage = +page;
-      // // console.log(this.$route.params.page); 
-      // this.currentPage = this.$route.params.page;
     },
   },
   methods: {

@@ -1,4 +1,4 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
 export default createStore({
   state: {
@@ -10,23 +10,17 @@ export default createStore({
     projects: [
       {
         id: 1,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
+        sliderItems: [],
         image: require("@/assets/portfolio/p1bix-1.jpg"),
         projectName: "",
         desc: "",
-        tag: "Окрашивание",
+        tag: "Биксипластия",
         text: "",
       },
       {
         id: 2,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
-        image: require("@/assets/portfolio/p1bix-1.jpg"),
+        sliderItems: [],
+        image: require("@/assets/portfolio/okras1.jpg"),
         projectName: "",
         desc: "",
         tag: "Окрашивание",
@@ -34,110 +28,218 @@ export default createStore({
       },
       {
         id: 3,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
-        image: require("@/assets/portfolio/p1bix-1.jpg"),
+        sliderItems: [],
+        image: require("@/assets/portfolio/okras2.jpg"),
         projectName: "",
         desc: "",
-        tag: "Мужская стрижка",
+        tag: "Окрашивание",
         text: "",
       },
       {
         id: 4,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
-        image: require("@/assets/portfolio/p1bix-1.jpg"),
+        sliderItems: [],
+        image: require("@/assets/portfolio/okras3.jpg"),
         projectName: "",
         desc: "",
-        tag: "Женская стрижка",
+        tag: "Окрашивание",
         text: "",
       },
       {
         id: 5,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
-        image: require("@/assets/portfolio/p1bix-1.jpg"),
+        sliderItems: [],
+        image: require("@/assets/portfolio/okras4.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Окрашивание",
+        text: "",
+      },
+      {
+        id: 6,
+        sliderItems: [],
+        image: require("@/assets/portfolio/airtouch1.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Airtouch",
+        text: "",
+      },
+      {
+        id: 7,
+        sliderItems: [],
+        image: require("@/assets/portfolio/airtouch2.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Airtouch",
+        text: "",
+      },
+      {
+        id: 8,
+        sliderItems: [],
+        image: require("@/assets/portfolio/airtouch3.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Airtouch",
+        text: "",
+      },
+      {
+        id: 9,
+        sliderItems: [],
+        image: require("@/assets/portfolio/airtouch4.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Airtouch",
+        text: "",
+      },
+      {
+        id: 10,
+        sliderItems: [],
+        image: require("@/assets/portfolio/bix2.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Биксипластия",
+        text: "",
+      },
+      {
+        id: 11,
+        sliderItems: [],
+        image: require("@/assets/portfolio/botox1.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Ботокс для волос",
+        text: "",
+      },
+      {
+        id: 12,
+        sliderItems: [],
+        image: require("@/assets/portfolio/botox2.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Ботокс для волос",
+        text: "",
+      },
+      {
+        id: 13,
+        sliderItems: [],
+        image: require("@/assets/portfolio/detstrizh1.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Детская стрижка",
+        text: "",
+      },
+      {
+        id: 14,
+        sliderItems: [],
+        image: require("@/assets/portfolio/kabinet1.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Мой кабинет",
+        text: "",
+      },
+      {
+        id: 15,
+        sliderItems: [],
+        image: require("@/assets/portfolio/kabinet2.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Мой кабинет",
+        text: "",
+      },
+      {
+        id: 16,
+        sliderItems: [],
+        image: require("@/assets/portfolio/kabinet3.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Мой кабинет",
+        text: "",
+      },
+      {
+        id: 17,
+        sliderItems: [],
+        image: require("@/assets/portfolio/kabinet4.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Мой кабинет",
+        text: "",
+      },
+      {
+        id: 18,
+        sliderItems: [],
+        image: require("@/assets/portfolio/keratin1.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Кератиновое выпрямление",
+        text: "",
+      },
+      {
+        id: 19,
+        sliderItems: [],
+        image: require("@/assets/portfolio/keratin2.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Кератиновое выпрямление",
+        text: "",
+      },
+      {
+        id: 20,
+        sliderItems: [],
+        image: require("@/assets/portfolio/melirovanie1.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Мелирование",
+        text: "",
+      },
+      {
+        id: 21,
+        sliderItems: [],
+        image: require("@/assets/portfolio/melirovanie2.jpg"),
+        projectName: "",
+        desc: "",
+        tag: "Мелирование",
+        text: "",
+      },
+      {
+        id: 22,
+        sliderItems: [],
+        image: require("@/assets/portfolio/strizhka1.jpg"),
         projectName: "",
         desc: "",
         tag: "Женская стрижка",
         text: "",
       },
       {
-        id: 6,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
-        image: require("@/assets/portfolio/p1bix-1.jpg"),
+        id: 23,
+        sliderItems: [],
+        image: require("@/assets/portfolio/strizhka2.jpg"),
         projectName: "",
         desc: "",
-        tag: "Эйртач",
+        tag: "Женская стрижка",
         text: "",
       },
       {
-        id: 7,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
-        image: require("@/assets/portfolio/p1bix-1.jpg"),
+        id: 24,
+        sliderItems: [],
+        image: require("@/assets/portfolio/tonir1.jpg"),
         projectName: "",
         desc: "",
-        tag: "Эйртач",
+        tag: "Тонирование",
         text: "",
       },
       {
-        id: 8,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
-        image: require("@/assets/portfolio/p1bix-1.jpg"),
+        id: 25,
+        sliderItems: [],
+        image: require("@/assets/portfolio/tonir2.jpg"),
         projectName: "",
         desc: "",
-        tag: "Ботокс",
+        tag: "Тонирование",
         text: "",
       },
       {
-        id: 9,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
-        image: require("@/assets/portfolio/p1bix-1.jpg"),
+        id: 26,
+        sliderItems: [],
+        image: require("@/assets/portfolio/uklad1.jpg"),
         projectName: "",
         desc: "",
-        tag: "Ботокс",
-        text: "",
-      },
-      {
-        id: 10,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
-        image: require("@/assets/portfolio/p1bix-1.jpg"),
-        projectName: "",
-        desc: "",
-        tag: "Уход за волосами",
-        text: "",
-      },
-      {
-        id: 11,
-        sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/portfolio/p1bix-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/portfolio/p1bix-2.jpg"),},
-        ],
-        image: require("@/assets/portfolio/p1bix-1.jpg"),
-        projectName: "",
-        desc: "",
-        tag: "Уход за волосами",
+        tag: "Укладка",
         text: "",
       },
     ],
@@ -146,8 +248,16 @@ export default createStore({
       {
         id: 1,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/botoks1-1.jpg"),},
-          {id: 2, name: 'img2', img: require("@/assets/Articles/botoks1-2.jpg"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/botoks1-1.jpg"),
+          },
+          {
+            id: 2,
+            name: "img2",
+            img: require("@/assets/Articles/botoks1-2.jpg"),
+          },
         ],
         image: require("@/assets/Articles/botoks1-2.jpg"),
         label: "",
@@ -163,7 +273,11 @@ export default createStore({
       {
         id: 2,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/schastye1-1.jpg"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/schastye1-1.jpg"),
+          },
         ],
         image: require("@/assets/Articles/schastye1-1.jpg"),
         label: "",
@@ -179,8 +293,16 @@ export default createStore({
       {
         id: 3,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/bixiplast1-1.jpg"),},
-          {id: 2, name: 'img1', img: require("@/assets/Articles/bixiplast1-2.jpg"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/bixiplast1-1.jpg"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/Articles/bixiplast1-2.jpg"),
+          },
         ],
         image: require("@/assets/Articles/bixiplast1-2.jpg"),
         label: "",
@@ -197,7 +319,31 @@ export default createStore({
       {
         id: 4,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/airtouch1-1.jpg"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/airtouch1-1.jpg"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/portfolio/airtouch1.jpg"),
+          },
+          {
+            id: 3,
+            name: "img1",
+            img: require("@/assets/portfolio/airtouch2.jpg"),
+          },
+          {
+            id: 4,
+            name: "img1",
+            img: require("@/assets/portfolio/airtouch3.jpg"),
+          },
+          {
+            id: 4,
+            name: "img1",
+            img: require("@/assets/portfolio/airtouch4.jpg"),
+          },
         ],
         image: require("@/assets/Articles/airtouch1-1.jpg"),
         label: "",
@@ -212,23 +358,47 @@ export default createStore({
       {
         id: 5,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
-          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/okras1-1.jpg"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/Articles/okras1-2.jpg"),
+          },
         ],
-        image: require("@/assets/Articles/testImg1.png"),
+        image: require("@/assets/Articles/okras1-1.jpg"),
         label: "",
-        heading: "Тестовая статья 1",
+        heading: "Однотонное окрашивание волос",
         date: "",
         link: "#",
-        text: `это текст к тестовой статье`,
-        tag: "тест",
+        text: `Однотонное окрашивание волос - это отличный способ изменить свой образ и добавить яркости и стиля вашим волосам. Эта техника окрашивания используется для создания равномерного и однородного цвета волос, который может быть как естественным, так и экспериментальным.
+        Однотонное окрашивание предлагает широкий выбор оттенков, от классических натуральных цветов до смелых и ярких. Независимо от того, хотите ли вы обновить свой текущий цвет волос или полностью сменить его, я умею работать с различными оттенками и посоветую вам наиболее подходящий вариант.
+      
+        Процесс однотонного окрашивания волос начинается с определения желаемого цвета. Краситель смешивается, чтобы получить цвет, который вы выбрали, и затем равномерно наносится на волосы. Это обеспечивает равномерное покрытие и насыщенность цвета.
+        Однотонное окрашивание волос также позволяет вам улучшить состояние ваших волос и придать им блеск. Красители для окрашивания волос содержат специальные ухаживающие компоненты, которые защищают ваши волосы и делают их мягкими и шелковистыми.
+      
+        После окрашивания важно правильно ухаживать за своими волосами. Используйте специальные шампуни и кондиционеры для окрашенных волос, чтобы сохранить яркость цвета и предотвратить выцветание. Также рекомендуется регулярно использовать питательные маски и сыворотки, чтобы восстановить и укрепить волосы.
+      
+        Я предлагаю вам профессиональное однотонное окрашивание волос и помогу вам выбрать идеальный оттенок, чтобы создать потрясающий образ. Я использую только качественные красители и обеспечиваю безопасность ваших волос. Приходите, чтобы сделать  вашу мечту о новом цвете волос реальностью!`,
+        tag: "Окрашивание",
         summary: "",
       },
       {
         id: 6,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
-          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/testImg1.png"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/Articles/testImg2.png"),
+          },
         ],
         image: require("@/assets/Articles/testImg1.png"),
         label: "",
@@ -242,8 +412,16 @@ export default createStore({
       {
         id: 7,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
-          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/testImg1.png"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/Articles/testImg2.png"),
+          },
         ],
         image: require("@/assets/Articles/testImg1.png"),
         label: "",
@@ -257,8 +435,16 @@ export default createStore({
       {
         id: 8,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
-          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/testImg1.png"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/Articles/testImg2.png"),
+          },
         ],
         image: require("@/assets/Articles/testImg1.png"),
         label: "",
@@ -272,8 +458,16 @@ export default createStore({
       {
         id: 9,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
-          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/testImg1.png"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/Articles/testImg2.png"),
+          },
         ],
         image: require("@/assets/Articles/testImg1.png"),
         label: "",
@@ -287,8 +481,16 @@ export default createStore({
       {
         id: 10,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
-          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/testImg1.png"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/Articles/testImg2.png"),
+          },
         ],
         image: require("@/assets/Articles/testImg1.png"),
         label: "",
@@ -302,8 +504,16 @@ export default createStore({
       {
         id: 11,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
-          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/testImg1.png"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/Articles/testImg2.png"),
+          },
         ],
         image: require("@/assets/Articles/testImg1.png"),
         label: "",
@@ -317,8 +527,16 @@ export default createStore({
       {
         id: 12,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
-          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/testImg1.png"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/Articles/testImg2.png"),
+          },
         ],
         image: require("@/assets/Articles/testImg1.png"),
         label: "",
@@ -332,8 +550,16 @@ export default createStore({
       {
         id: 13,
         sliderItems: [
-          {id: 1, name: 'img1', img: require("@/assets/Articles/testImg1.png"),},
-          {id: 2, name: 'img1', img: require("@/assets/Articles/testImg2.png"),},
+          {
+            id: 1,
+            name: "img1",
+            img: require("@/assets/Articles/testImg1.png"),
+          },
+          {
+            id: 2,
+            name: "img1",
+            img: require("@/assets/Articles/testImg2.png"),
+          },
         ],
         image: require("@/assets/Articles/testImg1.png"),
         label: "",
@@ -347,16 +573,16 @@ export default createStore({
     ],
   },
   getters: {
-    getShowFooterFlag(state){
+    getShowFooterFlag(state) {
       return state.showFooter;
     },
-    getProjects(state){
+    getProjects(state) {
       return state.projects;
     },
-    getArticles(state){
+    getArticles(state) {
       return state.articles;
     },
-    arrayOfTagsArticles(state){
+    arrayOfTagsArticles(state) {
       return Array.from(new Set(state.articles.map((item) => item.tag)));
     },
     arrayOfTags(state) {
@@ -368,18 +594,20 @@ export default createStore({
       }
       return state.projects.filter((el) => el.tag === state.sortPhotoItem);
     },
-    getFilteredArticlesSet(state) { 
+    getFilteredArticlesSet(state) {
       if (state.sortArticlesItem === "") {
         return state.articles;
       }
       return state.articles.filter((el) => el.tag === state.sortArticlesItem);
     },
-    getArticle(state){
-      return state.articles.find(function(elem){return elem.id === state.selectedArticleId})
+    getArticle(state) {
+      return state.articles.find(function (elem) {
+        return elem.id === state.selectedArticleId;
+      });
     },
   },
   mutations: {
-    CHANGEFOOTERSHOWFLAG(state, showFooter){
+    CHANGEFOOTERSHOWFLAG(state, showFooter) {
       state.showFooter = showFooter;
     },
     CHANGEPORTFOLIOSORTITEM(state, sortPhotoItem) {
@@ -392,8 +620,6 @@ export default createStore({
       state.selectedArticleId = selectedArticleId;
     },
   },
-  actions: {
-  },
-  modules: {
-  }
-})
+  actions: {},
+  modules: {},
+});

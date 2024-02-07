@@ -53,6 +53,7 @@ export default {
     justify-content: space-between;
     padding: 50px 20px 50px 20px;
     background: repeat url("../assets/mainPage/mainPageBackground.png");
+    min-height: 75vh;
 
     @media screen and (max-width: 630px) {
         flex-direction: column;

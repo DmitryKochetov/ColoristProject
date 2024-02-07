@@ -68,8 +68,6 @@ export default {
 <style lang="scss">
 .dropDownMenuWrapper {
   position: relative;
-  // width: 100px;
-  // height: 80px;
   border-radius: 12px;
   background: white;
   border: 1px solid #eee;

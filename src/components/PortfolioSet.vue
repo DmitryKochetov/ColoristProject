@@ -7,7 +7,7 @@
         </div>
         <div class="bigImage" id="imagePopup">
             <span class="bigImage__closeBtn" @click="closePopup()">×</span>
-            <img src="" alt="Image" id="bigImagePopup">
+            <img src="" alt="Image" id="bigImagePopup" @click="closePopup()">
         </div>
     </div>
 </template>
@@ -74,19 +74,21 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.8);
 
     &__closeBtn {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 5vh;
+        right: 5vw;
         font-family: Roboto;
         font-size: 30px;
         color: white;
         cursor: pointer;
+        transform: scale(2);
     }
     &__closeBtn:hover{
-        transform: scale(1.5);
+        transform: scale(3);
     }
 }
 

@@ -4,12 +4,9 @@
             <h2 class="hair__heading">{{ getArticle.heading }}</h2>
             <div class="hair__box articleBox">
                 <SliderComponent></SliderComponent>
-                <p class="hair__h3">{{ getArticle.text }}</p>
-                
+                <p class="hair__h3 articleText">{{ getArticle.text }}</p>
             </div>
-            
         </div>
-
     </div>
 </template>
   
@@ -45,6 +42,10 @@ export default {
   
 
 <style lang="scss">
+.articleText {
+    white-space: pre-wrap;
+}
+
 .hair__heading {
     font-size: 32px;
     margin-top: 2vh;
